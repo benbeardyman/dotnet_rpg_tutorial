@@ -45,8 +45,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuer = false,
             ValidateAudience = false
         };
-
     });
+builder.Services.AddHttpContextAccessor();
 
 
 
