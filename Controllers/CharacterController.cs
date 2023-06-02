@@ -17,11 +17,12 @@ namespace dotnet_rpg.Controllers
         {
             this.characterService = characterService;
         }
-        
+
         [HttpGet("GetAll")]
         public async Task <ActionResult<ServiceResponse<List<GetCharacterDto>>>> Get() 
         {
-            return Ok(await characterService.GetAllCharacters());
+            int userId = int.Parse(User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)!.Value);
+            return Ok(await characterService.GetAllCharacters(userId));
         }
 
         [HttpGet("{id}")]

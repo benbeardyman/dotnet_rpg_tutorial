@@ -8,6 +8,7 @@ global using dotnet_rpg.Data;
 global using Microsoft.IdentityModel.Tokens;
 global using Microsoft.AspNetCore.Authorization;
 global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using System.Security.Claims;
 using Swashbuckle.AspNetCore.Filters;
 using Microsoft.OpenApi.Models;
 
