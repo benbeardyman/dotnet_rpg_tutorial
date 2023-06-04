@@ -3,6 +3,7 @@ global using dotnet_rpg.Services.CharacterService;
 global using Microsoft.AspNetCore.Mvc;
 global using dotnet_rpg.Dtos.Character;
 global using dotnet_rpg.Dtos.Weapon;
+global using dotnet_rpg.Dtos.Skill;
 global using AutoMapper;
 global using Microsoft.EntityFrameworkCore;
 global using dotnet_rpg.Data;
@@ -13,6 +14,7 @@ global using System.Security.Claims;
 global using Swashbuckle.AspNetCore.Filters;
 global using Microsoft.OpenApi.Models;
 global using dotnet_rpg.Services.WeaponService;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
