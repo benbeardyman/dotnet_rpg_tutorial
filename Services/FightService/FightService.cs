@@ -42,7 +42,7 @@ namespace dotnet_rpg.Services.FightService
 
                 if(damage > 0)
                     opponent.HitPoints -= damage;
-                    response.Message = $"{opponent.Name} has been wounded by {damage} points!";
+                    response.Message = $"{opponent.Name} has taken {damage} damage!";
                 
                 if(opponent.HitPoints <= 0)
                     response.Message = $"{opponent.Name} has been defeated!";
@@ -87,7 +87,7 @@ namespace dotnet_rpg.Services.FightService
 
                 if(damage > 0)
                     opponent.HitPoints -= damage;
-                    response.Message = $"{opponent.Name} has been wounded by {damage} points!";
+                    response.Message = $"{opponent.Name} has taken {damage} damage!";
                 
                 if(opponent.HitPoints <= 0)
                     response.Message = $"{opponent.Name} has been defeated!";
